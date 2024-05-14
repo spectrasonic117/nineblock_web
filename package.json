@@ -1,0 +1,32 @@
+{
+  "name": "nbs_web",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev --open",
+    "start": "astro dev --open",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@astrojs/svelte": "^5.4.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "latest",
+    "svelte": "^4.2.15",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-plugin-astro": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "normalize.css": "latest",
+    "prettier": "latest",
+    "prettier-config-standard": "latest",
+    "prettier-plugin-astro": "latest",
+    "sass": "latest"
+  }
+}

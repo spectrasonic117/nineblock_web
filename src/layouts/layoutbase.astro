@@ -1,0 +1,33 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
+import 'normalize.css/normalize.css';
+---
+
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='description' content={description} />
+
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style lang='scss'>
+	body {
+		$max_width: 100vw;
+		$max_height: 100vh;
+		width: $max_width;
+		height: $max_height;
+	}
+</style>
